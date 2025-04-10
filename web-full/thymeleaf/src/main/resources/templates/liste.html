@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+<h1>Liste de users : </h1>
+
+<ul>
+    <li th:each="user: ${users}">
+        <span th:text="${user.name}"></span> - <span th:text="${user.age}"> years old</span>
+    </li>
+</ul>
+
+
+</body>
+</html>
