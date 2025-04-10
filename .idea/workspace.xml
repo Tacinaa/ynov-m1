@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="classe Task">
-      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/repository/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/task/list.html" afterDir="false" />
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="controller + repo + html">
+      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/TodoThymeleafApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/TodoThymeleafApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/task/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/task/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ThymeleafApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.TodoThymeleafApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;ma-branche&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -76,6 +78,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src\main\resources\templates" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\postcommenttp" />
@@ -96,6 +99,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="thymeleaf" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.thymeleaf.ThymeleafApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.thymeleaf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TodoThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="todo-thymeleaf" />
@@ -106,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ThymeleafApplication" />
         <item itemvalue="Application.PostcommenttpApplication" />
         <item itemvalue="Application.PostcommenttpApplication" />
         <item itemvalue="Application.PostcommenttpApplication" />
@@ -128,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744277714699</updated>
-      <workItem from="1744277715939" duration="6535000" />
+      <workItem from="1744277715939" duration="10093000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -154,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744287698435</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="controller + repo + html">
+      <option name="closed" value="true" />
+      <created>1744290376849</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744290376849</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +213,7 @@
     <MESSAGE value="delete" />
     <MESSAGE value="merge" />
     <MESSAGE value="classe Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="classe Task" />
+    <MESSAGE value="controller + repo + html" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller + repo + html" />
   </component>
 </project>
