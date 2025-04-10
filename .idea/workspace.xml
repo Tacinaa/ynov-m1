@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="merge">
-      <change beforePath="$PROJECT_DIR$/TP/TP-Dto-Validator-Spring.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/TP/postcommenttp/TP-Dto-Validator-Spring.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +60,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf" />
+      <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\postcommenttp" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.TodoThymeleafApplication">
     <configuration name="PostcommenttpApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.postcommenttp.PostcommenttpApplication" />
       <module name="postcommenttp" />
@@ -109,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744277714699</updated>
-      <workItem from="1744277715939" duration="3370000" />
+      <workItem from="1744277715939" duration="4364000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
