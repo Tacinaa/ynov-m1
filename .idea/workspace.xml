@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="controller + repo + html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP/tp_thymeleaf_spring_mvc_management_rh.zip" beforeDir="false" />
-    </list>
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="spring security product suite" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +37,17 @@
     &quot;accountId&quot;: &quot;f5f48fba-5f65-4d6f-91b0-4926810d6471&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -50,27 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ThymeleafApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TodoThymeleafApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ma-branche&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/Tasnime/Projets/IdeaProjects/m1/full-stack&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ThymeleafApplication.executor": "Debug",
+    "Spring Boot.TodoThymeleafApplication.executor": "Run",
+    "git-widget-placeholder": "ma-branche",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Users/Tasnime/Projets/IdeaProjects/m1/ynov-m1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src\main\resources\templates" />
@@ -79,6 +89,16 @@
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\postcommenttp" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.TodoThymeleafApplication">
     <configuration name="PostcommenttpApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -90,6 +110,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring-security-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.springsecurityproduct.SpringSecurityProductApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,6 +171,7 @@
       <updated>1744277714699</updated>
       <workItem from="1744277715939" duration="10093000" />
       <workItem from="1745825072561" duration="3140000" />
+      <workItem from="1747648727646" duration="4333000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -176,7 +205,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744290376849</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spring security product">
+      <option name="closed" value="true" />
+      <created>1747648932046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747648932046</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spring security product suite">
+      <option name="closed" value="true" />
+      <created>1747652488768</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747652488768</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +255,8 @@
     <MESSAGE value="merge" />
     <MESSAGE value="classe Task" />
     <MESSAGE value="controller + repo + html" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller + repo + html" />
+    <MESSAGE value="spring security product" />
+    <MESSAGE value="spring security product suite" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring security product suite" />
   </component>
 </project>

@@ -10,6 +10,8 @@
       <list>
         <option value="$PROJECT_DIR$/TP/todo-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/web-full/4-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/web-full/spring-security-product/pom.xml" />
+        <option value="$PROJECT_DIR$/web-full/6-spring-security/spring-security-product-v1/pom.xml" />
       </list>
     </option>
   </component>
