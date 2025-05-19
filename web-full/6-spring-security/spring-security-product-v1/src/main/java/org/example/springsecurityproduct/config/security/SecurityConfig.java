@@ -39,29 +39,16 @@ public class SecurityConfig {
                     .csrf(csrf -> csrf.disable())
                     .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                     .authorizeHttpRequests(authorize -> authorize
-                            .requestMatchers("/api/products/**").permitAll()
+                            .requestMatchers("/api/auth/**").permitAll()
+                            .requestMatchers("/api/products/**").hasRole("USER")
                             .requestMatchers("/api/products/admin/**").hasRole("ADMIN")
                             .anyRequest().authenticated()
-                    );
+                    ).httpBasic(Customizer.withDefaults());
 
             return http.build();
         }
 
 
-        public UserDetailsService inMemoryUserDetailsService() {
-
-            UserDetails user = User.withUsername("user")
-                    .password(passwordEncoder().encode("password"))
-                    .roles("USER")
-                    .build();
-
-            UserDetails admin = User.withUsername("admin")
-                    .password(passwordEncoder().encode("admin"))
-                    .roles("ADMIN")
-                    .build();
-
-            return new InMemoryUserDetailsManager(user, admin);
-        }
 
 
     }
