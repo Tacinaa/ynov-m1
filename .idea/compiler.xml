@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-security-m2ibank" />
         <module name="todo-thymeleaf" />
       </profile>
       <profile name="Annotation profile for thymeleaf" enabled="true">
@@ -32,6 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-security-m2ibank" options="-parameters" />
       <module name="spring-security-product" options="-parameters" />
       <module name="thymeleaf" options="-parameters" />
       <module name="todo-thymeleaf" options="-parameters" />

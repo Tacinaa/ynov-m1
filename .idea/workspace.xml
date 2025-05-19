@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="spring security product suite" />
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="spring security product + tp">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +42,10 @@
     &quot;accountId&quot;: &quot;f5f48fba-5f65-4d6f-91b0-4926810d6471&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -67,6 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.M2iBankBackendApplication.executor": "Run",
     "Spring Boot.ThymeleafApplication.executor": "Debug",
     "Spring Boot.TodoThymeleafApplication.executor": "Run",
     "git-widget-placeholder": "ma-branche",
@@ -100,7 +106,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TodoThymeleafApplication">
+  <component name="RunManager" selected="Spring Boot.M2iBankBackendApplication">
     <configuration name="PostcommenttpApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.postcommenttp.PostcommenttpApplication" />
       <module name="postcommenttp" />
@@ -110,6 +116,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="M2iBankBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring-security-m2ibank" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.m2ibank.M2iBankBackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,6 +186,7 @@
       <workItem from="1744277715939" duration="10093000" />
       <workItem from="1745825072561" duration="3140000" />
       <workItem from="1747648727646" duration="4333000" />
+      <workItem from="1747666341451" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -221,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747652488768</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring security product + tp">
+      <option name="closed" value="true" />
+      <created>1747666484617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747666484617</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +280,7 @@
     <MESSAGE value="controller + repo + html" />
     <MESSAGE value="spring security product" />
     <MESSAGE value="spring security product suite" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring security product suite" />
+    <MESSAGE value="spring security product + tp" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring security product + tp" />
   </component>
 </project>
