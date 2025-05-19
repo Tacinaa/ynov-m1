@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="controller + repo + html">
-      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/java/org/example/todothymeleaf/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/task/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/TP/todo-thymeleaf/src/main/resources/templates/task/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/tp_thymeleaf_spring_mvc_management_rh.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744277714699</updated>
       <workItem from="1744277715939" duration="10093000" />
+      <workItem from="1745825072561" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
