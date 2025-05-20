@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="token fonctionnel">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="changement emplacement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -258,7 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747726454022</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changement emplacement">
+      <option name="closed" value="true" />
+      <created>1747735427011</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747735427011</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changement emplacement">
+      <option name="closed" value="true" />
+      <created>1747735527019</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747735527019</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +311,7 @@
     <MESSAGE value="spring security product + tp" />
     <MESSAGE value="connexion à la bdd" />
     <MESSAGE value="token fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="token fonctionnel" />
+    <MESSAGE value="changement emplacement" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement emplacement" />
   </component>
 </project>
