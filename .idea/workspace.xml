@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="spring security product + tp">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="connexion à la bdd">
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/dto/JwtResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/repository/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,30 +68,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.M2iBankBackendApplication.executor": "Run",
-    "Spring Boot.ThymeleafApplication.executor": "Debug",
-    "Spring Boot.TodoThymeleafApplication.executor": "Run",
-    "git-widget-placeholder": "ma-branche",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Users/Tasnime/Projets/IdeaProjects/m1/ynov-m1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.M2iBankBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ThymeleafApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.TodoThymeleafApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ma-branche&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Tasnime/Projets/IdeaProjects/m1/ynov-m1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src\main\resources\templates" />
@@ -186,7 +191,8 @@
       <workItem from="1744277715939" duration="10093000" />
       <workItem from="1745825072561" duration="3140000" />
       <workItem from="1747648727646" duration="4333000" />
-      <workItem from="1747666341451" duration="2275000" />
+      <workItem from="1747666341451" duration="3989000" />
+      <workItem from="1747725178532" duration="950000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -244,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747666484617</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="connexion à la bdd">
+      <option name="closed" value="true" />
+      <created>1747668780100</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747668780100</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +295,7 @@
     <MESSAGE value="spring security product" />
     <MESSAGE value="spring security product suite" />
     <MESSAGE value="spring security product + tp" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring security product + tp" />
+    <MESSAGE value="connexion à la bdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="connexion à la bdd" />
   </component>
 </project>
