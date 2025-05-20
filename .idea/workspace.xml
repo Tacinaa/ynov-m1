@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="token fonctionnel">
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/service/CustomUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/model/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
