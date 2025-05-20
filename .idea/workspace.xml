@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="changement emplacement" />
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="projet react">
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/components/CreateProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/components/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/components/ProductList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/components/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/components/UpdateProductModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/helpers/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/helpers/auth-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/helpers/user-details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/services/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/services/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/services/productService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/react-app/src/shared/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,37 +92,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.M2iBankBackendApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ThymeleafApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.TodoThymeleafApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ma-branche&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/Tasnime/Projets/IdeaProjects/m1/ynov-m1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.M2iBankBackendApplication.executor": "Run",
+    "Spring Boot.ThymeleafApplication.executor": "Debug",
+    "Spring Boot.TodoThymeleafApplication.executor": "Run",
+    "git-widget-placeholder": "Merging ma-branche",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Users/Tasnime/Projets/IdeaProjects/m1/ynov-m1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\web-full\6-spring-security\tp\perso" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src\main\resources\templates" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\todo-thymeleaf\src" />
       <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP\postcommenttp" />
-      <recent name="D:\Users\Tasnime\Projets\IdeaProjects\m1\ynov-m1\TP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -272,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747735527019</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changement emplacement">
+      <option name="closed" value="true" />
+      <created>1747735618626</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747735618626</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +354,7 @@
     <MESSAGE value="connexion à la bdd" />
     <MESSAGE value="token fonctionnel" />
     <MESSAGE value="changement emplacement" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement emplacement" />
+    <MESSAGE value="projet react" />
+    <option name="LAST_COMMIT_MESSAGE" value="projet react" />
   </component>
 </project>
