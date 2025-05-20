@@ -6,10 +6,13 @@ import com.m2ibank.model.Customer;
 import com.m2ibank.repository.CustomerRepository;
 import com.m2ibank.config.jwt.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
+@RequestMapping("/auth")
 public class AuthController {
 
     @Autowired
@@ -29,10 +32,10 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public JwtResponseDto login(@RequestBody UserLoginDto request) throws Exception {
+    public JwtResponseDto login(@RequestBody UserLoginDto request) {
         Customer customer = customerRepository.findByEmail(request.getEmail());
         if (customer == null || !passwordEncoder.matches(request.getPassword(), customer.getPwd())) {
-            throw new Exception("Identifiants invalides");
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Identifiants invalides");
         }
         String token = jwtUtil.generateToken(customer);
         return new JwtResponseDto(token);

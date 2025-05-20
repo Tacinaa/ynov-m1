@@ -42,6 +42,7 @@ public class JwtUtil {
                     .parseClaimsJws(token);
             return true;
         } catch (JwtException e) {
+            System.err.println("Invalid JWT: " + e.getMessage());
             return false;
         }
     }
@@ -56,5 +57,9 @@ public class JwtUtil {
 
     public String extractUsername(String token) {
         return extractClaims(token).getSubject();
+    }
+
+    public Integer extractUserId(String token) {
+        return extractClaims(token).get("id", Integer.class);
     }
 }

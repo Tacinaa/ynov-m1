@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="connexion à la bdd">
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/dto/JwtResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/dto/UserLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/repository/CustomerRepository.java" afterDir="false" />
+    <list default="true" id="127a0bb6-6ae4-4117-85bb-e9c5de493196" name="Changes" comment="token fonctionnel">
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/service/CustomUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-full/6-spring-security/tp/spring-security-bank-enonce/src/main/java/com/m2ibank/model/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,7 @@
       <workItem from="1745825072561" duration="3140000" />
       <workItem from="1747648727646" duration="4333000" />
       <workItem from="1747666341451" duration="3989000" />
-      <workItem from="1747725178532" duration="950000" />
+      <workItem from="1747725178532" duration="3487000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <option name="closed" value="true" />
@@ -258,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747668780100</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="token fonctionnel">
+      <option name="closed" value="true" />
+      <created>1747726454022</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747726454022</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +305,7 @@
     <MESSAGE value="spring security product suite" />
     <MESSAGE value="spring security product + tp" />
     <MESSAGE value="connexion à la bdd" />
-    <option name="LAST_COMMIT_MESSAGE" value="connexion à la bdd" />
+    <MESSAGE value="token fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="token fonctionnel" />
   </component>
 </project>
