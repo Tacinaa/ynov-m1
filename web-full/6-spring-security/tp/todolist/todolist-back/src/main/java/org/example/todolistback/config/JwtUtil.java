@@ -2,10 +2,11 @@ package org.example.todolistback.config;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import org.example.todolistback.model.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.security.Key;
+import javax.crypto.SecretKey;
 import java.util.Base64;
 import java.util.Date;
 
@@ -13,47 +14,52 @@ import java.util.Date;
 public class JwtUtil {
 
     @Value("${app.jwt.secret}")
-    private String jwtSecret;
+    private String secret;
 
-    @Value("${app.jwt.expiration}")
-    private long jwtExpirationMs;
+    private final long EXPIRATION_TIME = 1000 * 60 * 60 * 10; // 10 heures
 
-    public String generateToken(String username) {
-        Date now = new Date();
-        Date expiryDate = new Date(now.getTime() + jwtExpirationMs);
-
-        return Jwts.builder()
-                .setSubject(username)
-                .setIssuedAt(now)
-                .setExpiration(expiryDate)
-                .signWith(getSigningKey(), SignatureAlgorithm.HS256)
-                .compact();
+    private SecretKey getSecretKey() {
+        byte[] keyBytes = Base64.getDecoder().decode(secret);
+        return Keys.hmacShaKeyFor(keyBytes);
     }
 
-    public String getUsernameFromToken(String token) {
-        return parseToken(token).getBody().getSubject();
+    public String generateToken(User user) {
+        return Jwts.builder()
+                .setSubject(user.getUsername())
+                .claim("id", user.getId())
+                .claim("roles", user.getRoles().stream().map(r -> r.getName()).toList())
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
+                .signWith(getSecretKey(), SignatureAlgorithm.HS512)
+                .compact();
     }
 
     public boolean validateToken(String token) {
         try {
-            parseToken(token);
+            Jwts.parserBuilder()
+                    .setSigningKey(getSecretKey())
+                    .build()
+                    .parseClaimsJws(token);
             return true;
-        } catch (ExpiredJwtException | UnsupportedJwtException |
-                 MalformedJwtException | SignatureException | IllegalArgumentException e) {
-            System.out.println("Invalid JWT: " + e.getMessage());
+        } catch (JwtException e) {
+            System.err.println("❌ Invalid JWT: " + e.getMessage());
             return false;
         }
     }
 
-    private Jws<Claims> parseToken(String token) {
+    public Claims extractClaims(String token) {
         return Jwts.parserBuilder()
-                .setSigningKey(getSigningKey())
+                .setSigningKey(getSecretKey())
                 .build()
-                .parseClaimsJws(token);
+                .parseClaimsJws(token)
+                .getBody();
     }
 
-    private Key getSigningKey() {
-        byte[] keyBytes = Base64.getDecoder().decode(jwtSecret);
-        return Keys.hmacShaKeyFor(keyBytes);
+    public String extractUsername(String token) {
+        return extractClaims(token).getSubject();
+    }
+
+    public Long extractUserId(String token) {
+        return extractClaims(token).get("id", Long.class);
     }
 }

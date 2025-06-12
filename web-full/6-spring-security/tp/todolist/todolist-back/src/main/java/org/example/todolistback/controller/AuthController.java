@@ -8,26 +8,17 @@ import org.example.todolistback.model.User;
 import org.example.todolistback.repository.RoleRepository;
 import org.example.todolistback.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Set;
 
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
-
-    @Autowired
-    private AuthenticationManager authManager;
-
-    @Autowired
-    private JwtUtil jwtUtil;
-
-    @Autowired
-    private org.example.todolistback.service.UserDetailsServiceImpl userDetailsService;
 
     @Autowired
     private UserRepository userRepository;
@@ -38,39 +29,65 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Autowired
+    private JwtUtil jwtUtil;
 
-    @PostMapping("/login")
-    public AuthResponse login(@RequestBody AuthRequest request) {
-        Authentication authentication = authManager.authenticate(
-                new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
-
-        UserDetails userDetails = userDetailsService.loadUserByUsername(request.getUsername());
-        String token = jwtUtil.generateToken(userDetails.getUsername());
-
-        return new AuthResponse(token);
-    }
-
-    @PostMapping("/register")
-    public String register(@RequestBody AuthRequest request) {
+    @PostMapping("/register-admin")
+    public String registerAdmin(@RequestBody AuthRequest request) {
         if (userRepository.findByUsername(request.getUsername()).isPresent()) {
-            return "Username already exists";
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username already exists");
         }
 
         User user = new User();
         user.setUsername(request.getUsername());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
 
-        Role roleUser = roleRepository.findByName("ROLE_ADMIN")
-                .orElseGet(() -> {
-                    Role r = new Role();
-                    r.setName("ROLE_ADMIN");
-                    return roleRepository.save(r);
-                });
+        Role role = roleRepository.findByName("ROLE_ADMIN")
+                .orElseGet(() -> roleRepository.save(new Role("ROLE_ADMIN")));
 
-        user.setRoles(Set.of(roleUser));
+        user.setRoles(Set.of(role));
         userRepository.save(user);
+        return "Admin registered";
+    }
 
-        return "User registered successfully";
+    @PostMapping("/register-user")
+    public String registerUser(@RequestBody AuthRequest request) {
+        if (userRepository.findByUsername(request.getUsername()).isPresent()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username already exists");
+        }
+
+        User user = new User();
+        user.setUsername(request.getUsername());
+        user.setPassword(passwordEncoder.encode(request.getPassword()));
+
+        Role role = roleRepository.findByName("ROLE_USER")
+                .orElseGet(() -> roleRepository.save(new Role("ROLE_USER")));
+
+        user.setRoles(Set.of(role));
+        userRepository.save(user);
+        return "User registered";
+    }
+
+    @PostMapping("/login")
+    public AuthResponse login(@RequestBody AuthRequest request) {
+        User user = userRepository.findByUsername(request.getUsername())
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid credentials"));
+
+        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid credentials");
+        }
+
+        String token = jwtUtil.generateToken(user);
+        return new AuthResponse(token);
+    }
+
+    @GetMapping("/me")
+    public String getCurrentUser(Authentication auth) {
+        System.out.println("🔍 Auth dans /me : " + auth);
+        if (auth == null || !auth.isAuthenticated()) {
+            return "Pas connecté";
+        }
+        return "Connecté en tant que : " + auth.getName();
     }
 
 }

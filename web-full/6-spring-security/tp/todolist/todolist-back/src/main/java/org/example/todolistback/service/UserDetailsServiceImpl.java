@@ -3,10 +3,12 @@ package org.example.todolistback.service;
 import org.example.todolistback.model.User;
 import org.example.todolistback.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
 
 @Service
+@Primary
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
