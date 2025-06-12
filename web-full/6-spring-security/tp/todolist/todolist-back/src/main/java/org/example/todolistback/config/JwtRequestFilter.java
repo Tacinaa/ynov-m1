@@ -59,14 +59,12 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         }
 
         Authentication currentAuth = SecurityContextHolder.getContext().getAuthentication();
-        System.out.println("📌 Auth dans SecurityContextHolder à la fin : " + currentAuth);
 
         filterChain.doFilter(request, response);
     }
 
     private String extractToken(HttpServletRequest request) {
         String bearer = request.getHeader("Authorization");
-        System.out.println("📦 Authorization header: " + bearer);
         if (bearer != null && bearer.startsWith("Bearer ")) {
             return bearer.substring(7);
         }

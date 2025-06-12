@@ -21,5 +21,10 @@ public class TestController {
         return "Connecté en tant que : " + auth.getName();
     }
 
+    @GetMapping("/test-todo")
+    public String test(Authentication auth) {
+        return "Rôles : " + auth.getAuthorities();
+    }
+
 
 }
